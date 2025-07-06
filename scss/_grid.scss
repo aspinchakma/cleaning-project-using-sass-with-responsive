@@ -1,0 +1,8 @@
+@mixin grid($number: 2, $gap: 0px) {
+  display: grid;
+  grid-template-columns: repeat($number, 1fr);
+  align-content: center;
+  justify-content: space-between;
+  height: 100%;
+  grid-column-gap: $gap;
+}
