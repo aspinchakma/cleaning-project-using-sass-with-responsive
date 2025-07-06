@@ -12,3 +12,19 @@
     color: #36b864;
   }
 }
+
+// mobile button
+@mixin mobile_button {
+  border: 1px solid #36b864;
+  color: white;
+  background-color: #36b864;
+  transition: 0.9s;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 8px;
+  &:hover {
+    background-color: white;
+    color: #36b864;
+  }
+}
