@@ -344,13 +344,16 @@ nav .get_quote_btn button:hover {
   border-radius: 100%;
 }
 
+#pro_cleaning_parent {
+  margin-top: 150px;
+}
+
 .pricing_container {
   margin-top: 200px;
   background: url("/img/bg-2.png");
   height: 520px;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid black;
   margin-bottom: 500px;
 }
 .pricing_container .title_pricing {
@@ -469,6 +472,7 @@ nav .get_quote_btn button:hover {
   height: 100%;
   grid-column-gap: 20px;
   height: 325px;
+  border: 1px solid black;
 }
 .feedback h2 {
   font-size: 39px;
@@ -519,7 +523,7 @@ nav .get_quote_btn button:hover {
 }
 
 .service_container {
-  margin-top: 250px;
+  margin-top: 60px;
 }
 .service_container .sevice_news {
   text-align: center;
@@ -822,6 +826,7 @@ footer .bottom_section hr {
     width: 90%;
     margin: 0px auto 0px;
     margin-top: 50px;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-content: center;
@@ -860,10 +865,9 @@ footer .bottom_section hr {
     width: 100%;
   }
   .cleaning_team {
-    margin-top: 90px;
     width: 90%;
     margin: 0px auto 0px;
-    border: 1px solid black;
+    margin-bottom: 30px;
   }
   .cleaning_team .cleaning_title_description {
     display: grid;
@@ -875,6 +879,7 @@ footer .bottom_section hr {
   }
   .cleaning_team .cleaning_title_description h2 {
     font-size: 28px;
+    text-align: center;
   }
   .cleaning_team .cleaning_title_description h3 {
     display: none;
@@ -894,6 +899,8 @@ footer .bottom_section hr {
     height: 100%;
     grid-column-gap: 0px;
     grid-row-gap: 30px;
+  }
+  .cleaning_team .teams_persons .person {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .cleaning_team .teams_persons .person .mini_container h3 {
@@ -908,190 +915,65 @@ footer .bottom_section hr {
     font-size: 19px;
   }
   .pro_cleaning_container {
-    width: 80%;
+    margin-bottom: 30px;
+    width: 90%;
     margin: 0px auto 0px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-content: center;
     justify-content: space-between;
     height: 100%;
-    grid-column-gap: 30px;
+    grid-column-gap: 0px;
+    height: auto;
+    height: auto;
   }
   .pro_cleaning_container .pro_cleaning {
     text-align: center;
   }
   .pro_cleaning_container .pro_cleaning img {
-    width: 80%;
+    width: 100%;
   }
   .pro_cleaning_container h2 {
-    font-size: 39px;
-    font-weight: bold;
-    margin-bottom: 18px;
+    font-size: 28px;
+    margin-bottom: 10px;
   }
   .pro_cleaning_container p {
-    font-size: 18px;
-    margin-bottom: 18px;
+    font-size: 16px;
   }
   .pro_cleaning_container .list_container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-content: center;
     justify-content: space-between;
     height: 100%;
-    grid-column-gap: 10px;
+    grid-column-gap: 0px;
     height: auto;
-  }
-  .pro_cleaning_container .list_container ul {
-    list-style: none;
+    margin-top: 20px;
   }
   .pro_cleaning_container .list_container ul li {
-    width: 80%;
-    background-color: #f5f4f4;
-    padding: 8px;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  .pro_cleaning_container .list_container ul i {
-    color: #36b864;
-    border-radius: 100%;
-    font-size: 15px;
-    width: 15px;
-    color: white;
-    margin-right: 9px;
-    background-color: #36b864;
-    border-radius: 100%;
-  }
-  .pricing_container {
-    margin-top: 200px;
-    background: url("/img/bg-2.png");
-    height: 520px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid black;
-    margin-bottom: 500px;
-  }
-  .pricing_container .title_pricing {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: center;
-    justify-content: space-between;
-    height: 100%;
-    grid-column-gap: 20px;
-    height: auto;
-    align-content: start;
-    margin-top: 50px;
-  }
-  .pricing_container .title_pricing .pricing_first_container {
-    color: white;
-  }
-  .pricing_container .title_pricing .pricing_first_container p {
-    text-align: center;
-    font-size: 18px;
-  }
-  .pricing_container .title_pricing .pricing_first_container h2 {
-    font-size: 39px;
-    font-weight: bold;
-    margin: 18px 0px;
-    text-align: center;
-  }
-  .pricing_container .title_pricing .pricing_first_container .yearly_monthly {
-    text-align: center;
-    margin-top: 30px;
-  }
-  .pricing_container .title_pricing .pricing_first_container .yearly_monthly span {
-    background-color: #f4f5f8;
-    font-size: 18px;
-    padding: 9px 6px;
-    border-radius: 150px;
-  }
-  .pricing_container .title_pricing .pricing_first_container .yearly_monthly span .pricing {
-    color: black;
-    border: 1px solid rgb(219, 217, 217);
-    border-radius: 150px;
-    transition: 0.9s;
-    margin-right: 3px;
-    padding: 6px 16px;
-    cursor: pointer;
-  }
-  .pricing_container .title_pricing .pricing_first_container .yearly_monthly span .pricing:hover {
-    background-color: #36b864;
-    color: white;
-    border: 1px solid white;
-  }
-  .price_packages {
-    width: 80%;
-    margin: 0px auto 0px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: center;
-    justify-content: space-between;
-    height: 100%;
-    grid-column-gap: 40px;
-    margin-top: 60px;
-  }
-  .price_packages h4 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .price_packages h3 {
-    background-color: #36b864;
-    padding: 15px 30px;
-    color: white;
-    border-radius: 5px;
-  }
-  .price_packages .packages {
-    padding: 30px 40px;
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 15px;
-  }
-  .price_packages .packages span {
-    margin-right: 5px;
-  }
-  .price_packages .packages .price_for_month {
-    font-size: 28px;
-  }
-  .price_packages ul {
-    list-style-position: inside;
-  }
-  .price_packages ul li {
-    color: #4d4d4d;
-    margin-top: 30px;
-  }
-  .price_packages button {
-    margin-top: 30px;
     width: 100%;
-    background-color: #36b864;
-    padding: 15px 30px;
-    border-radius: 5px;
-    color: white;
-    border: 1px solid #36b864;
-    cursor: pointer;
-    transition: 0.9s;
   }
-  .price_packages button:hover {
-    background-color: white;
+  .pricing_container_for_customer {
     border: 1px solid black;
-    color: black;
   }
   .feedback {
-    width: 80%;
+    width: 90%;
     margin: 0px auto 0px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-content: center;
     justify-content: space-between;
     height: 100%;
-    grid-column-gap: 20px;
-    height: 325px;
+    grid-column-gap: 0px;
+    margin-top: 40px;
+    height: auto;
   }
   .feedback h2 {
-    font-size: 39px;
-    font-weight: bold;
+    font-size: 28px;
   }
   .feedback .read_feedback {
-    font-size: 18px;
-    margin: 30px 0px;
+    font-size: 16px;
+    margin: 20px 0px;
   }
   .feedback button {
     padding: 10px 24px;
@@ -1109,143 +991,70 @@ footer .bottom_section hr {
     color: #36b864;
   }
   .feedback .feedback_user {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    grid-template-columns: 1fr;
     border-top: 9px solid #36b864;
     border-right: 9px solid #36b864;
     border-radius: 50px;
     padding: 18px;
   }
   .feedback .feedback_user .feed_back_img {
-    width: 90%;
-  }
-  .feedback .feedback_user .feedback_flex_container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .feedback .feedback_user .common_feedback_para {
-    font-size: 18px;
-    color: #4d4d4d;
-    margin: 10px 0px;
-  }
-  .feedback .feedback_quote {
-    height: 58px;
-    margin-top: 18px;
-  }
-  .service_container {
-    margin-top: 250px;
-  }
-  .service_container .sevice_news {
-    text-align: center;
-  }
-  .service_container .sevice_news button {
-    padding: 10px 24px;
-    border: 1px solid #36b864;
-    color: white;
-    background-color: #36b864;
-    transition: 0.9s;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 20px;
     width: 100%;
   }
-  .service_container .sevice_news button:hover {
-    background-color: white;
-    color: #36b864;
+  .feedback .feedback_user .common_feedback_para {
+    font-size: 16px;
+  }
+  .service_container {
+    margin-top: 60px;
   }
   .keep_touch_container {
-    margin-top: 100px;
-    width: 80%;
+    margin-top: 40px;
+    width: 90%;
     margin: 0px auto 0px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-content: center;
     justify-content: space-between;
     height: 100%;
-    grid-column-gap: 100px;
-    height: 600px;
+    grid-column-gap: 0px;
+    height: auto;
   }
   .keep_touch_container h2 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
   }
-  .keep_touch_container .keep_left .contact {
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    padding: 10px 20px;
-    background-color: #fbfbfb;
-    margin: 20px 0px;
-  }
-  .keep_touch_container .keep_left .contact i {
-    font-size: 25px;
-    margin-right: 10px;
-    background-color: #36b864;
-    color: white;
-    padding: 10px;
-    border-radius: 100%;
-  }
-  .keep_touch_container .keep_left .contact .phone_number {
-    color: #4d4d4d;
-  }
-  .keep_touch_container .keep_right .keep_right_para {
-    font-size: 18px;
-    margin: 15px 0;
-    color: #4d4d4d;
-  }
-  .keep_touch_container .keep_right input,
-  .keep_touch_container .keep_right textarea {
-    width: 90%;
-    font-size: 18px;
-    padding: 18px 8px;
-    outline: none;
-    border: none;
-    background-color: #fbfbfb;
-    margin: 20px 0px;
-  }
-  .keep_touch_container .keep_right button {
-    padding: 10px 24px;
-    border: 1px solid #36b864;
-    color: white;
-    background-color: #36b864;
-    transition: 0.9s;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 20px;
-  }
-  .keep_touch_container .keep_right button:hover {
-    background-color: white;
-    color: #36b864;
+  .keep_touch_container .keep_right {
+    margin-top: 40px;
+    text-align: center;
   }
   footer {
-    margin-top: 60px;
-    padding: 100px 0px 10px 0px;
-    color: white;
-    background-color: #111d15;
+    padding: 50px 0px 10px 0px;
   }
   footer .footer_container {
-    width: 80%;
+    width: 90%;
     margin: 0px auto 0px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-content: center;
     justify-content: space-between;
     height: 100%;
-    grid-column-gap: 10px;
+    grid-column-gap: 0px;
     height: auto;
   }
   footer .footer_container .company_logo_description p {
     margin-top: 20px;
   }
   footer .footer_container .others_link {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content: center;
     justify-content: space-between;
     height: 100%;
-    grid-column-gap: 10px;
+    grid-column-gap: 0px;
   }
   footer .footer_container ul {
+    margin-top: 10px;
     list-style: none;
   }
   footer .footer_container ul li a {

@@ -275,7 +275,10 @@ nav {
     }
   }
 }
-
+// pro cleaning
+#pro_cleaning_parent {
+  margin-top: 150px;
+}
 // pricing section
 .pricing_container {
   margin-top: 200px;
@@ -283,7 +286,6 @@ nav {
   height: 520px;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid black;
   margin-bottom: 500px; // margin for feedback section
   .title_pricing {
     @include grid(3, 20px);
@@ -387,6 +389,7 @@ nav {
   @include commonaligAllSection;
   @include grid(2, 20px);
   height: 325px;
+  border: 1px solid black;
 
   h2 {
     @include heading;
@@ -433,7 +436,7 @@ nav {
 }
 // service news
 .service_container {
-  margin-top: 250px;
+  margin-top: 60px;
   .sevice_news {
     text-align: center;
     button {
@@ -667,6 +670,7 @@ $mobile_para: 16px;
   .high_quality_container {
     @include mobile_width();
     margin-top: 50px;
+    margin-bottom: 40px;
     @include grid(1, 0px);
     height: auto;
     h2 {
@@ -691,13 +695,13 @@ $mobile_para: 16px;
 
   // Cleaning team section
   .cleaning_team {
-    margin-top: $section-margin;
     @include mobile_width();
-    border: 1px solid black;
+    margin-bottom: 30px;
     .cleaning_title_description {
       @include grid(1, 0px);
       h2 {
         @include mobile_heading();
+        text-align: center;
       }
       h3 {
         display: none;
@@ -713,8 +717,9 @@ $mobile_para: 16px;
     .teams_persons {
       @include grid(1, 0px);
       grid-row-gap: 30px;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
       .person {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         .mini_container {
           h3 {
             margin-top: 0;
@@ -734,167 +739,54 @@ $mobile_para: 16px;
 
   // pro cleaning section
   .pro_cleaning_container {
-    @include commonaligAllSection;
-    @include grid(2, 30px);
+    margin-bottom: 30px;
+    @include mobile_width();
+
+    @include grid(1, 0px);
+    height: auto;
+    height: auto;
     .pro_cleaning {
       text-align: center;
       img {
-        width: 80%;
+        width: 100%;
       }
     }
 
     h2 {
-      @include heading;
-      margin-bottom: $common-margin;
+      @include mobile_heading();
+      margin-bottom: 10px;
     }
     p {
-      font-size: $para-size;
-      margin-bottom: $common-margin;
+      font-size: $mobile_para;
     }
     .list_container {
-      @include grid(2, 10px);
+      @include grid(1, 0px);
       height: auto;
+      margin-top: 20px;
       ul {
-        list-style: none;
         li {
-          @include linkwidthforlaptop;
-          background-color: #f5f4f4;
-          padding: 8px;
-          margin-top: 10px;
-          border-radius: 5px;
-        }
-        i {
-          color: $common-color;
-          border-radius: 100%;
-          font-size: 15px;
-          width: 15px;
-          color: white;
-          margin-right: 9px;
-          background-color: #36b864;
-          border-radius: 100%;
+          width: 100%;
         }
       }
     }
   }
-
-  // pricing section
-  .pricing_container {
-    margin-top: 200px;
-    background: url("/img/bg-2.png");
-    height: 520px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .pricing_container_for_customer {
     border: 1px solid black;
-    margin-bottom: 500px; // margin for feedback section
-    .title_pricing {
-      @include grid(3, 20px);
-      height: auto;
-      align-content: start;
-      margin-top: 50px;
-      .pricing_first_container {
-        color: white;
-        p {
-          text-align: center;
-          font-size: $para-size;
-        }
-        h2 {
-          @include heading;
-          margin: $common-margin 0px;
-          text-align: center;
-        }
-        .yearly_monthly {
-          text-align: center;
-          margin-top: 30px;
-          span {
-            background-color: #f4f5f8;
-            font-size: $para-size;
-            padding: 9px 6px;
-            border-radius: 150px;
-            .pricing {
-              color: black;
-              border: 1px solid rgb(219, 217, 217);
-              border-radius: 150px;
-              transition: 0.9s;
-              margin-right: 3px;
-              padding: 6px 16px;
-              cursor: pointer;
-              &:hover {
-                background-color: $common-color;
-                color: white;
-                border: 1px solid white;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .price_packages {
-    @include commonaligAllSection;
-    @include grid(3, 40px);
-    margin-top: 60px;
-    h4 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    h3 {
-      background-color: #36b864;
-      padding: 15px 30px;
-      color: white;
-      border-radius: 5px;
-    }
-    .packages {
-      padding: 30px 40px;
-      border: 1px solid black;
-      background-color: white;
-      border-radius: 15px;
-      span {
-        margin-right: 5px;
-      }
-      .price_for_month {
-        font-size: 28px;
-      }
-    }
-    // for list item
-
-    ul {
-      list-style-position: inside;
-      li {
-        color: $secondar-color;
-        margin-top: 30px;
-      }
-    }
-    button {
-      margin-top: 30px;
-      width: 100%;
-      background-color: $common-color;
-      padding: 15px 30px;
-      border-radius: 5px;
-      color: white;
-      border: 1px solid $common-color;
-      cursor: pointer;
-      transition: 0.9s;
-      &:hover {
-        background-color: white;
-        border: 1px solid black;
-        color: black;
-      }
-    }
   }
 
   // Feedback
   .feedback {
-    @include commonaligAllSection;
-    @include grid(2, 20px);
-    height: 325px;
+    @include mobile_width();
+    @include grid(1, 0px);
+    margin-top: 40px;
+    height: auto;
 
     h2 {
-      @include heading;
+      @include mobile_heading();
     }
     .read_feedback {
-      font-size: $para-size;
-      margin: 30px 0px;
+      font-size: $mobile_para;
+      margin: 20px 0px;
     }
 
     button {
@@ -905,111 +797,51 @@ $mobile_para: 16px;
     // feedback righ container
 
     .feedback_user {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+      margin-top: 50px;
+      grid-template-columns: 1fr;
       border-top: 9px solid $common-color;
       border-right: 9px solid $common-color;
       border-radius: 50px;
       padding: $common-margin;
 
       .feed_back_img {
-        width: 90%;
-      }
-
-      .feedback_flex_container {
-        display: flex;
-        justify-content: space-between;
+        width: 100%;
       }
 
       .common_feedback_para {
-        font-size: $para-size;
-        color: $secondar-color;
-        margin: 10px 0px;
+        font-size: $mobile_para;
       }
-    }
-    .feedback_quote {
-      height: 58px;
-      margin-top: $common-margin;
     }
   }
   // service news
   .service_container {
-    margin-top: 250px;
-    .sevice_news {
-      text-align: center;
-      button {
-        @include button;
-        width: 100%;
-      }
-    }
+    margin-top: 60px;
   }
 
   // find us section
   .keep_touch_container {
-    margin-top: 100px;
-    @include commonaligAllSection;
-    @include grid(2, 100px);
-    height: 600px;
+    margin-top: 40px;
+    @include mobile_width();
+    @include grid(1, 0px);
+    height: auto;
 
     h2 {
-      font-size: 30px;
-      font-weight: 500;
-    }
-    .keep_left {
-      .contact {
-        display: flex;
-        align-items: center;
-        border-radius: 5px;
-        padding: 10px 20px;
-        background-color: #fbfbfb;
-        margin: 20px 0px;
-
-        i {
-          font-size: 25px;
-          margin-right: 10px;
-          background-color: $common-color;
-          color: white;
-          padding: 10px;
-          border-radius: 100%;
-        }
-
-        .phone_number {
-          color: $secondar-color;
-        }
-      }
+      @include mobile_heading();
+      text-align: center;
     }
     .keep_right {
-      .keep_right_para {
-        font-size: $para-size;
-        margin: 15px 0;
-        color: $secondar-color;
-      }
-      input,
-      textarea {
-        width: 90%;
-        font-size: $para-size;
-        padding: 18px 8px;
-        outline: none;
-        border: none;
-        background-color: #fbfbfb;
-        margin: 20px 0px;
-      }
-      button {
-        @include button;
-      }
+      margin-top: 40px;
+      text-align: center;
     }
   }
 
   // footer
 
   footer {
-    margin-top: 60px;
-    padding: 100px 0px 10px 0px;
-    color: white;
-    background-color: $footer-color;
+    padding: 50px 0px 10px 0px;
     .footer_container {
-      @include commonaligAllSection;
-      @include grid(3, 10px);
+      @include mobile_width();
+      @include grid(1, 0px);
       height: auto;
       .company_logo_description {
         p {
@@ -1017,9 +849,11 @@ $mobile_para: 16px;
         }
       }
       .others_link {
-        @include grid(2, 10px);
+        margin-top: 10px;
+        @include grid(2, 0px);
       }
       ul {
+        margin-top: 10px;
         list-style: none;
         li {
           a {
