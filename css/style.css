@@ -348,64 +348,52 @@ nav .get_quote_btn button:hover {
   margin-top: 150px;
 }
 
-.pricing_container {
-  margin-top: 200px;
-  background: url("/img/bg-2.png");
-  height: 520px;
+.pricing_container_for_customer {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-image: url("/img/bg-2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 500px;
+  margin: 50px 0;
+  position: relative;
+  margin-bottom: 250px;
+  min-height: 100vh;
 }
-.pricing_container .title_pricing {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-content: center;
-  justify-content: space-between;
-  height: 100%;
-  grid-column-gap: 20px;
-  height: auto;
-  align-content: start;
-  margin-top: 50px;
-}
-.pricing_container .title_pricing .pricing_first_container {
-  color: white;
-}
-.pricing_container .title_pricing .pricing_first_container p {
+.pricing_container_for_customer p,
+.pricing_container_for_customer h2 {
   text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.pricing_container_for_customer p {
   font-size: 18px;
 }
-.pricing_container .title_pricing .pricing_first_container h2 {
+.pricing_container_for_customer h2 {
   font-size: 39px;
   font-weight: bold;
-  margin: 18px 0px;
-  text-align: center;
 }
-.pricing_container .title_pricing .pricing_first_container .yearly_monthly {
-  text-align: center;
-  margin-top: 30px;
-}
-.pricing_container .title_pricing .pricing_first_container .yearly_monthly span {
-  background-color: #f4f5f8;
-  font-size: 18px;
-  padding: 9px 6px;
+.pricing_container_for_customer .monthly_yealy button {
+  padding: 6px 1px;
   border-radius: 150px;
-}
-.pricing_container .title_pricing .pricing_first_container .yearly_monthly span .pricing {
-  color: black;
-  border: 1px solid rgb(219, 217, 217);
-  border-radius: 150px;
-  transition: 0.9s;
-  margin-right: 3px;
-  padding: 6px 16px;
-  cursor: pointer;
-}
-.pricing_container .title_pricing .pricing_first_container .yearly_monthly span .pricing:hover {
-  background-color: #36b864;
-  color: white;
   border: 1px solid white;
 }
-
-.price_packages {
+.pricing_container_for_customer .monthly_yealy button span {
+  padding: 10px 24px;
+  border: 1px solid #36b864;
+  color: white;
+  background-color: #36b864;
+  transition: 0.9s;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 5px 16px;
+  border-radius: 150px;
+}
+.pricing_container_for_customer .monthly_yealy button span:hover {
+  background-color: white;
+  color: #36b864;
+}
+.pricing_container_for_customer .prices_service {
   width: 80%;
   margin: 0px auto 0px;
   display: grid;
@@ -413,53 +401,49 @@ nav .get_quote_btn button:hover {
   align-content: center;
   justify-content: space-between;
   height: 100%;
-  grid-column-gap: 40px;
-  margin-top: 60px;
+  grid-column-gap: 20px;
 }
-.price_packages h4 {
+.pricing_container_for_customer .prices_service .price {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 23px 27px;
+}
+.pricing_container_for_customer .prices_service .price h3 {
   text-align: center;
-  margin-bottom: 30px;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
-.price_packages h3 {
+.pricing_container_for_customer .prices_service .price .price_para {
   background-color: #36b864;
-  padding: 15px 30px;
-  color: white;
   border-radius: 5px;
 }
-.price_packages .packages {
-  padding: 30px 40px;
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 15px;
+.pricing_container_for_customer .prices_service .price .monthly_price {
+  font-size: 39px;
+  font-weight: bold;
 }
-.price_packages .packages span {
-  margin-right: 5px;
-}
-.price_packages .packages .price_for_month {
-  font-size: 28px;
-}
-.price_packages ul {
+.pricing_container_for_customer .prices_service .price ul {
   list-style-position: inside;
-}
-.price_packages ul li {
   color: #4d4d4d;
-  margin-top: 30px;
 }
-.price_packages button {
-  margin-top: 30px;
-  width: 100%;
-  background-color: #36b864;
-  padding: 15px 30px;
-  border-radius: 5px;
-  color: white;
+.pricing_container_for_customer .prices_service .price ul li {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.pricing_container_for_customer .prices_service .price button {
+  padding: 10px 24px;
   border: 1px solid #36b864;
-  cursor: pointer;
+  color: white;
+  background-color: #36b864;
   transition: 0.9s;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 100%;
 }
-.price_packages button:hover {
+.pricing_container_for_customer .prices_service .price button:hover {
   background-color: white;
-  border: 1px solid black;
-  color: black;
+  color: #36b864;
 }
 
 .feedback {
@@ -471,8 +455,7 @@ nav .get_quote_btn button:hover {
   justify-content: space-between;
   height: 100%;
   grid-column-gap: 20px;
-  height: 325px;
-  border: 1px solid black;
+  height: auto;
 }
 .feedback h2 {
   font-size: 39px;
@@ -1107,4 +1090,4 @@ footer .bottom_section hr {
     height: 1px;
     margin-bottom: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
